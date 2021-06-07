@@ -19,10 +19,14 @@ contract Token is ERC721, Ownable {
         ERC721(name, symbol)
     {}
 
+    function getTokenDetails(uint256 tokenId) public view returns (Pet memory) {
+        return _tokenDetails[tokenId];
+    }
+
     function mint(
         uint8 damage,
         uint8 magic,
-        uint8 endurance
+        uint256 endurance
     ) public onlyOwner {
         _tokenDetails[nextId] = Pet(damage, magic, block.timestamp, endurance);
         _safeMint(msg.sender, nextId);
