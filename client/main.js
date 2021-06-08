@@ -1,5 +1,5 @@
-Moralis.initialize('INSERT_APP_ID'); // Application id from moralis.io
-Moralis.serverURL = 'INSERT_SERVER_URL'; //Server url from moralis.io
+Moralis.initialize('m20PA3clspCzNMiWXM5okTJK6gUbHgxPya6UFVmt'); // Application id from moralis.io
+Moralis.serverURL = 'https://rhdnu7cf8pia.moralis.io:2053/server'; //Server url from moralis.io
 
 async function login() {
   try {
